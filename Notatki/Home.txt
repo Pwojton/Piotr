@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-12T12:20:12+01:00
+
+====== Home ======
+Created piątek 12 styczeń 2018
+
+wszsytkie wyrażenia zaczynamy znakiem - "$"
+( ) - selektor 
+"." - 
+
+$("selektor").akcja(function() {
+	działania;
+});
+
+1. Sposób selekcji
+W Jquery pierwszum sposobem selekcji jest selekcja elementu z identyfikatorem.
+
+===== Dolączenie jQuaery do strony =====
+
+1. CDM (Content Delivery Network) - biblioteki 
+2. <script src=""../js/jquery.js></script>
+
+====== Metody ======
+
+.hide() - ukryj
+.show() - pokaz
+.toggle() - 
+.fadeIn() - efekt pokazania sie 
+.fadeOut() - 
+
+
+zrob curs nacodecademy
