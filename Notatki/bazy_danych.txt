@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-29T10:01:12+01:00
+
+====== bazy danych ======
+Created poniedziałek 29 styczeń 2018
+
+**klucz główny  (ang. primary key)**- pole którego wartość jest unikalna w obrębie tabeli, tzn. ze klucz główny jednoznacznie identyfikuje rekord tabeli
+**klucz obcy (ang secondary key, REFERENCES table_name)** - klucz obcy pobiera wartości z klucza głównego, łączy tabele zależne z tabelą glówną
+
+===== TYPY realcji =====
+**relacja jeden-do-wielu - **dowlona ilość razy
