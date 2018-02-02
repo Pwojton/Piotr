@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-02T12:15:05+01:00
+
+====== Serwery ======
+Created piątek 02 luty 2018
+
+Serwer - "komputer" udostępniający zasoby
+
