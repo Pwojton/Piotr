@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-02T12:11:07+01:00
+
+====== Bootstrap ======
+Created piątek 02 marzec 2018
+
+Bootstrap jest podzielony na pięć kategorii:
+1 Extra small (xs)  	<576px
+2 Small (sm)			>= 576px
+3  Medium (md)		>=768px
+4  Large (lg)			>=992px
+5 Extra lage (xl)		>=1200px
+
+**Obrazek responsywny - **obrazek dostosowujący się do ekranu
+
+=== spacing ===
+m - margines (zewnętrzny)
+p - padding (margines wewnętrzny)
+
+t- top
+b - bottm
+l - left 
+r - right
+x - lewy iprawy margines
+y - górny i dolny margines
+
+spacer - najmniejsza jednostka  
