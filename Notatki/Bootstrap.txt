@@ -26,3 +26,7 @@ x - lewy iprawy margines
 y - górny i dolny margines
 
 spacer - najmniejsza jednostka  
+
+
+===== Pseudo elementy css =====
+p::before

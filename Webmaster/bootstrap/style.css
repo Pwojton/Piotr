@@ -1,0 +1,11 @@
+body {
+  background-image: url('kanion.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/*style użytkownika*/
+.mark, mark {
+  background-color: rgb(199, 192, 23);
+}
