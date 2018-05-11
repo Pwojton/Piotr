@@ -17,3 +17,6 @@ REAL - liczba z przecinkiem
 not NULL - NIE MOŻE BYĆ PZECHOWYWANA WARTOŚĆ NIEOZNACZONA
 DEFAULT  - wartość domyślna
 zOBACZRELACJE MIĘDZY TABELAMI
+
+insert into -  wprowadz dane 
+VALUES WARTOSĆI

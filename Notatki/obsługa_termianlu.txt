@@ -13,3 +13,5 @@ sqlite3.exe szkola.db < szkola.sql
 .tables - lista tabel
 .schema -  pokaż pola i typy danych
 .quit - wyjdź 
+
+SELECT * FROM  (tabela bez nawiasow);
