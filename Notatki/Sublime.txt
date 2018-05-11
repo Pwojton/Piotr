@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-05-11T12:01:50+02:00
+
+====== Sublime ======
+Created piątek 11 maja 2018
+
+CTR + SHIFT + P - polecenia 
+[[git:status]] 

@@ -29,4 +29,9 @@ spacer - najmniejsza jednostka
 
 
 ===== Pseudo elementy css =====
-p::before
+https://getbootstrap.com/docs/4.0/utilities/flex/
+https://getbootstrap.com/docs/4.0/components/navbar/
+ toogle - cos dziala jak przelacznik
+collapse -  wszystko co sie sklada i rozklada
+active - wyrozna element
+https://getbootstrap.com/docs/4.0/components/jumbotron/

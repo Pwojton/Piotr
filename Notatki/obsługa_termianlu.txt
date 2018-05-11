@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-05-11T12:34:03+02:00
+
+====== obsługa termianlu ======
+Created piątek 11 maja 2018
+
+ls - lista pików
+cat - pokaż zaartosc plikow 
+< 
+sqlite3.exe szkola.db
+sqlite3.exe szkola.db < szkola.sql
+.tables - lista tabel
+.schema -  pokaż pola i typy danych
+.quit - wyjdź 

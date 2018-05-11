@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-05-11T11:55:39+02:00
+
+====== SQL ======
+Created piątek 11 maja 2018
+
+Tabela sklada się z pola i recordów
+Każde polecenie jest zakończone ;
+Klucz głowny -  jednoznacznie identyfikuje dany record (iczba całkowita)
+Klucz obcy - odsyla do klucza głownego
+iNTIGER - LICZBA CAŁGOWITA DODATNIA
+AUTOINCREMENT - WARTOSC POLA NADAWANA AUTOMATYCZNIE PREZ BAZE DANYCH
+BOOLEAN - prawda czy fałsz
+FOREIGN KEY (id_klasa) REFERENCES tbKlasy(id) - klucz obcy
+REAL - liczba z przecinkiem
+not NULL - NIE MOŻE BYĆ PZECHOWYWANA WARTOŚĆ NIEOZNACZONA
+DEFAULT  - wartość domyślna
+zOBACZRELACJE MIĘDZY TABELAMI

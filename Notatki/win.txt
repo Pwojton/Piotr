@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-05-11T12:34:27+02:00
+
+====== win ======
+Created piątek 11 maja 2018
+
+C:\Windows\System32\sglite.exe
+
+cmd
+powershell
+sqlite3.exe
