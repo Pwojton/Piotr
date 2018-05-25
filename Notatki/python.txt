@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-05-25T12:06:44+02:00
+
+====== python ======
+Created piątek 25 maja 2018
+
+def main(args):         funkcja główna
+	return 0                  
