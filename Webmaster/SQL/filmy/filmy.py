@@ -15,8 +15,22 @@ def dane_z_pliku(nazwa_pliku):
     return dane
 
 
+def kwerenda1(cur):
+    cur.execute("""
+        SELECT name, rating
+        FROM filmy
+        WHERE genre = 'romance' AND year BETWEEN 1990 AND 1999
+        ORDER BY rating
+        DESC LIMIT 2, 3;
+    """)
+
+    wyniki = cur.fetchall()
+    for rekord in wyniki:
+        print(rekord)
+
+
 def main(args):
-    con = sqlite3.connect('filmy.db')
+    con = sqlite3.connect('filmy.db')  # połączenie z bazą
     cur = con.cursor()  # utworzenie kursora
 
     with open('filmy.sql', 'r') as plik:
@@ -25,6 +39,8 @@ def main(args):
     filmy = dane_z_pliku('filmy.txt')
     filmy.pop(0)  # usunięcie pierwszego elementu listy
     cur.executemany('INSERT INTO filmy VALUES(?, ?, ?, ?, ?)', filmy)
+
+    kwerenda1(cur)
 
     con.commit()  # zatwierdzenie wszystkich informacji w bazie
     return 0
