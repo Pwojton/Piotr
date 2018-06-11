@@ -7,3 +7,6 @@ Created piątek 25 maja 2018
 
 def main(args):         funkcja główna
 	return 0                  
+
+różnica między listą a zbiorem:
+w zbiorze dane nie pwtarzają się
