@@ -20,3 +20,9 @@ zOBACZRELACJE MIĘDZY TABELAMI
 
 insert into -  wprowadz dane 
 VALUES WARTOSĆI
+
+
+SELECT AVG(downloads) FROM fakeapps; - średnia
+
+SELECT name, downloads FROM fakeapps WHERE downloads < (SELECT AVG(downloads) FROM fakeapps);
+

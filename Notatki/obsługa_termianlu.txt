@@ -26,4 +26,13 @@ SELECT name, genre  FROM filmy WHERE genre ='';
 
 BETWEEN '' AND '';  Jeżeli jest tekst to druga litera nie jest pokazywana
 
+SELECT ROUND(AVG(price)) FROM fakeapps;
 
+SELECT COUNT(*) FROM fakeapps WHERE downloads < (SELECT AVG(downloads) FROM fakeapps);
+
+SELECT price, COUNT(*) FROM fakeapps WHERE downloads > 20000 GROUP BY price ;
+
+ORDER BY 
+
+
+SELECT category, price, ROUND(AVG(downloads),2) AS srednia FROM fakeapps GROUP BY category, price ORDER BY srednia DESC;
