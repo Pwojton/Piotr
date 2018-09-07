@@ -1,0 +1,35 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-06T08:08:23+02:00
+
+===== Kod maszynowy =====
+Created czwartek 06 września 2018
+
+Maszy zapamiętuje kod binarny
+
+**asemblery** - pierwsze języki programowania, używany jest do programowania rzeczy któe muszą być szybkie
+ 
+**języki programowania wysokiego pozoiomu** - ich zadaniem jest przetworzenie języka na kod maszynowy, są stwrzone na bazie asemblerów
+
+**programowanie** - mówienie komputwrowie co ma robić i w jakiej kolejności
+
+W latach 70 XXw. powstały języki programowania C , C++ i Pascal
+
+**Kompilator** - to program napisany przez twórców danego jęzka który anazlizuje składnie poleceń i na ich podstawie tworzy nowy program, tworzy obiekt pośredni zawirający instrukcje do kodu maszynowego
+
+**Biblioteki **- 
+
+**Linker (konsolidacja)** - łaczenie z wywoławany,i funkcjami systemowymi
+
+Kod źródłowy jest interpretowny (Python, Java, Js)
+
+**Algorytm** - skończony ciąg czynności, przekształcający zbiór danych wejściowych nazbiór danych wyjściowych
+
+Elemnty schematu blokowego
+
+**Blok graniczny**  (//elipsa//)- początek algorytmu
+**Blok operacyjny** (//prostokąt//) - operacje zmieniające wartości zmiennych
+**Blok wejścia/wyjścia** (//równoległobok//) - operacje wprowadzania i wyprowadzania danych
+**Blok decyzyjny** (//romb//) - wybór jednej z dwóch możliwych dróg działania  
+
+

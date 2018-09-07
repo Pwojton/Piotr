@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-07T13:40:16+02:00
+
+====== C++ ======
+Created piątek 07 września 2018
+
+biblioteka standardowa:  __<iostream>__
+
+=== Typy danych: ===
+int - liczby całkowite
+char -pojedyńcze znaki (liczby i alfabet angielski) - typ całkowity
+long int - liczby całkowite z dużym zakresem - typ całkowity
+float  - 6 cyfr znaczących po przecinku - typ zmienno przecinkowy
+double - 10 cyfr znaczących po przecinku - typ zmienno przecinkowy
+bool - przyjmuje dwie wartości **true** albo **false **- typ logiczny
+
+
+
+int main(int argc, char **argv)
+{
+								Funkcja główna
+	return 0;
+}                        
+
+<< - przekierowanie                
