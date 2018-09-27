@@ -26,3 +26,5 @@ SELECT AVG(downloads) FROM fakeapps; - średnia
 
 SELECT name, downloads FROM fakeapps WHERE downloads < (SELECT AVG(downloads) FROM fakeapps);
 
+
+

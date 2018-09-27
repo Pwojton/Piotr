@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-24T07:22:24+02:00
+
+====== Normalizacja danych - SQL ======
+Created poniedziałek 24 września 2018
+
+
+
+Nadmiar danych jest uważane jako błąd, pn:
+- zabiera miejsce w pamięci 
+
+Kolumny tablei nie powinny zawierac kolekcji wartości
+
+Normazacja to bezstratny proces organizaowania danych w tabelach mający na celu zmniejszenie ilości dnych składowch w bazie oraz wyeliminowanie potencjalnych anomalii
+
+=== Pierwsza postać normlaizacji 1NF ===
+-Atomowości danych  - każde pole przechowuje jedną informacje, dzięki czemu możemy dokonywać efektywnych zapytań
+- Uikalość danych
+
+=== Druga postać normalna 2NF ===
+Każda tabela powinna przechowywać dane dotyczące tylko konkretnej klasy obiektów 
+
+
+=== Trzecia postać normalna 3NF ===
+Wyrzucenie z bazy danych pól ktore nie są potrzebne
