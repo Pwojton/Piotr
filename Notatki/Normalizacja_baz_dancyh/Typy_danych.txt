@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-10-01T07:32:58+02:00
+
+====== Typy danych ======
+Created poniedziałek 01 października 2018
+
+* NULL 
+* BOOLEAN (0 -FALSE, 1 - TRUE)

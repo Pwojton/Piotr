@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-10-01T07:14:37+02:00
+
+====== Constraints ======
+Created poniedziałek 01 października 2018
+
+* **PRIMARY KEY** - klucz główny
+* **AUTONUMERIC** - pole które bęzdie numerowane automatycznie
+* **UNIQUE** - unikalności wartości w kolumnie
+* **NOT NULL** - nie dopuszczenie pustych wartości
+* **DEFAULT **- wartość domyślna np: ""(pusty znak), 10%
+* **FOREIGN KEY **- definicjaklucza obcego
+* nazwa_pola **REFERENCES** tabela(inne_pole) - inna definicja klucza głównego
+* **CHECK num1 > num2 **- testowanie wartości
+
+**ON DELETE CASADE **- 
+Razem z wierszem tabeli nadrzędnej zostają unusinięte wszystie wiersze tabeli podrzędnej, w których wartości klucza obcego wskazują na usuwany wiersz (pod warunkiem, że usunięcie tych wierszyjaest możliwe bez naruszenia innych więzów referencyjnych)
+
+ON DELETE NULL/ SET DEFAULT
