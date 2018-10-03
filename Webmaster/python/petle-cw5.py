@@ -62,4 +62,4 @@ def main4(args):
 
 if __name__ == '__main__':
     import sys
-sys.exit(main4(sys.argv))
+sys.exit(main3(sys.argv))
