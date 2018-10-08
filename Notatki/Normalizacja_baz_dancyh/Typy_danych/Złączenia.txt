@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-10-08T08:18:28+02:00
+
+====== Złączenia ======
+Created poniedziałek 08 października 2018
+
+JOIN  'nazwa tabeli' ON 'pole'
