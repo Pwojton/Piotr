@@ -26,16 +26,16 @@ def liczby3():
     Wykluczone liczby: 111, 222, 333 itd.
     """
     
-    licznik = 0
+    ile= 0
     
-    for i in range(1, 10):
-        for j in range(0, 10):
-            for k in range(0, 10):
-                if i != j or j != k or k != i:
+    for i in range(1, 10):  # liczb setek
+        for j in range(0, 10):  # liczba dziesiątek
+            for k in range(0, 10):  # liczba jedności
+                if i != j and i != k and j != k:
                     print("{}{}{} ".format(i, j,k), end='')
-                    licznik = licznik + 1
+                    ile = ile + 1
     print()
-    return licznik
+    return ile
 
 def main(args):
     print("\n\nLiczb 3-cyfrowych:", liczby3())
