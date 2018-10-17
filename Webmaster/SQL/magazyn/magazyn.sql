@@ -17,7 +17,7 @@ CREATE TABLE Orders (
     FOREIGN KEY (subscribtion_id) REFERENCES Subscribtion(id)
 );
 
-CREATE TABLE Subscribtion (
+CREATE TABLE Supscribtion (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     description TEXT,
     price_per_month DECIMAL,
