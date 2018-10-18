@@ -6,14 +6,15 @@
 #include <iostream>
 using namespace std;
 
-void prostokat(int a, int b, char znak) {
-    for (int i; i<a; i++){
-        for (int j; j<b; j++){
-            
-            }
-        }
-    
-    
+void prostokat(int a, int b, char znak){
+    for (int i = 0; i < x; i++){
+        for (int j = 0; j < y; j++)
+            if (j == 0 || j == y - 1 || i == 0 || i == x - 1)
+                cout << z;
+            else
+                cout << " ";
+        cout << endl;
+    }
 }
 
 int main(int argc, char **argv)
