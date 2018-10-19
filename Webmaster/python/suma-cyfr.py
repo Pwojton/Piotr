@@ -8,7 +8,7 @@
 #  
 
 
-def sumuj_cyfry1(a):
+def sumuj_cyfrye1(a):
     suma = 0
     while a > 0:
         suma += a % 10
@@ -16,7 +16,10 @@ def sumuj_cyfry1(a):
     return suma
     
 def sumuj_cyfry2(a):
-    
+    suma = 0
+    for cyfra in str(a):
+        suma += int(cyfra)
+    return suma
 
 def main(args):
     a = int(input("Podaj liczbę: "))
@@ -37,4 +40,4 @@ def main(args):
 
 if __name__ == '__main__':
     import sys
-    sys.exit(sumuj_cyfre1(sys.argv))
+    sys.exit(sumuj_cyfry2(sys.argv))
