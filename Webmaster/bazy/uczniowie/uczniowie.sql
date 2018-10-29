@@ -1,40 +1,41 @@
 DROP TABLE IF EXISTS uczniowie;
-DROP TABLE IF EXISTS klasy;
-DROP TABLE IF EXISTS przedmioty;
-DROP TABLE IF EXISTS oceny;
-
 CREATE TABLE uczniowie (
-id INTEGER PRIMARY KEY,
-imie TEXT,
-nazwisko TEXT,
-plec INTEGER
-id_klasa INTEGER,
-egz_hum NUMERIC,
-egz_mat NUMERIC,
-egz_jez NUMERIC
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    imie TEXT,
+    nazwisko TEXT,
+    plec BOOLEAN,
+    id_klasa INTEGER NOT NULL,
+    egz_hum NUMERIC NOT NULL DEFAULT 0,
+    egz_mat NUMERIC NOT NULL DEFAULT 0,
+    egz_jez NUMERIC NOT NULL DEFAULT 0,
+    FOREIGN KEY (id_klasa) REFERENCES klasy (id)
+    ON DELETE CASCADE ON UPDATE NO ACTION
 );
 
+DROP TABLE IF EXISTS klasy;
 CREATE TABLE klasy (
-id INTEGER PRIMARY KEY AUTOINCREMENT,
-klasa TEXT(2),
-rok_naboru INTEGER(4),
-rok_matury INTEGER(4)
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    klasa TEXT(2),
+    rok_naboru INTEGER,
+    rok_matury INTEGER
 );
 
+DROP TABLE IF EXISTS przedmioty;
 CREATE TABLE przedmioty (
-id INTEGER PRIMARY KEY AUTOINCREMENT,
-przedmiot TEXT,
-imie_naucz TEXT,
-nazwisko_naucz TEXT,
-plec_naucz INTEGER(1)
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    przedmiot TEXT,
+    imie_naucz TEXT,
+    nazwisko_naucz TEXT,
+    plec_naucz BOOLEAN
 );
 
+DROP TABLE IF EXISTS oceny;
 CREATE TABLE oceny (
-id INTEGER PRIMARY KEY AUTOINCREMENT,
-data DATE,
-ocena INTEGER(1),
-id_uczen INTEGER,
-id_przedmiot INTEGER,
-FOREIGN KEY (id_uczen) REFERENCES uczniowie(id),
-FOREIGN KEY (id_przedmiot) REFERENCES przedmioty(id)
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    datad DATE,
+    id_uczen INTEGER NOT NULL,
+    id_przedmiot INTEGER NOT NULL,
+    ocena DECIMAL NOT NULL,
+    FOREIGN KEY (id_uczen) REFERENCES uczniowie (id) ON DELETE NO ACTION ON UPDATE NO ACTION
+    FOREIGN KEY (id_przedmiot) REFERENCES przedmioty (id) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
