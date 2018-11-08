@@ -1,47 +1,28 @@
-/*
- * znaki.cpp
- * 
- * char - typ danej zawierający jeden znak
- */
-
-
-#include <iostream>
-
+@@ -10,14 +10,20 @@
 using namespace std;
-
-void zamien_znaki(char tb[], int roz) {
-    for(int i = 0; i < roz; i ++) {
-        
+void odwroc(char tb[], int roz){
+        for(int i = roz; i >= 0; i--)
+            cout << tb[i] << " ";
+    
     }
-    
+void ascii(char tb[], int roz) {
+        int kod = 0;
+        for(int i = 0; i < roz; i++){
+            kod = (int)tb[i];
+            if (kod > 96 && kod < 123){
+                cout << (char)(kod-32) << " ";
+                }
+            else if (kod > 64 && kod < 92){
+            else if (kod > 64 && kod < 91){
+                cout << (char)(kod+32) << " ";
+                }
+            else {
+@@ -66,6 +72,7 @@ int main(int argc, char **argv)
+    //int ilosc = cin.gcount();
+    //ilosc = zlicz(znaki);
+    int ilosc = strlen(znaki);
+    ascii(znaki, ilosc);
+    //~ascii(znaki, ilosc);
+    odwroc(znaki, ilosc);
+    return 0;
 }
-
-void licz_znaki(char tb[], int roz)
-{
-    int i = 0;
-    int cyfry, literyD, literyM, reszta;
-    cyfry = literyD = literyM = reszta = 0;
-    
-    int znak_kod = 0; // kod ASCII badanego znkau
-    while (tb[i] != '\0') {
-        if(znak_kod > 64 && znak_kod < 91)
-            literyD++;
-        else if (znak_kod > 97 && znak_kod < 122)
-            literyM++;
-        else if(znak_kod > 48 && znak_kod < 57)
-            cyfry++;
-        else
-            reszta++;
-    };
-    cout << "LiteryD " << literyD << "LiteryM " << literyM << "Cyfry " << cyfry << endl; 
-}
-
-int main(int argc, char **argv)
-{
-    const int rozmiar = 20;
-	char znaki[rozmiar];
-    cin.getline(znaki, rozmiar);
-    licz_znaki(znaki, cin.gcount());
-	return 0;
-}
-
