@@ -1,9 +1,7 @@
-@@ -10,14 +10,20 @@
 using namespace std;
 void odwroc(char tb[], int roz){
         for(int i = roz; i >= 0; i--)
             cout << tb[i] << " ";
-    
     }
 void ascii(char tb[], int roz) {
         int kod = 0;
@@ -16,8 +14,29 @@ void ascii(char tb[], int roz) {
             else if (kod > 64 && kod < 91){
                 cout << (char)(kod+32) << " ";
                 }
+            }
             else {
-@@ -66,6 +72,7 @@ int main(int argc, char **argv)
+
+         }
+     cout << "\n\nmałe: " << literyM << endl;
+     cout << "duże: " << literyD << endl;
+     cout << "cyfry: " << cyfry << endl;
+     cout << "Inne: " << reszta << endl;
+ }
+ 
+ int zlicz(char tb[]){
+     int i = 0;
+     while (tb[i] != '\0') {
+         i++;
+         }
+     return i;
+     }
+ 
+ int main(int argc, char **argv)
+ {
+     const int rozmiar = 20;
+     char znaki[rozmiar];
+     cin.getline(znaki, rozmiar);
     //int ilosc = cin.gcount();
     //ilosc = zlicz(znaki);
     int ilosc = strlen(znaki);

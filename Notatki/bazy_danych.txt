@@ -10,3 +10,5 @@ Created poniedziałek 29 styczeń 2018
 
 ===== TYPY realcji =====
 **relacja jeden-do-wielu - **dowlona ilość razy
+
+arc gnome dash board
