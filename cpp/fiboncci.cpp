@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 
     for (int i = 0; i < 0; i++){
         cout << fibonacci_it(n) << endl;
-        wynik = i + 1;
+        wynik = wynik + 1;
         }
 
     return 0;
