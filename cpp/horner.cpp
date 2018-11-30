@@ -5,17 +5,26 @@
  * w(x) = x (x (2x+ 3) + 5) + 4 => 3
  */
 
-
 #include <iostream>
 using namespace std;
 
 void drukujw(int st, float tb[])
 {
-    for (int i=st; i>=0; i-- ) {
-        cout <<"x"<< "^"<<tb[i];
+    int i;
+    for (i=0; i<st; i++) {
+        cout << tb[i] << "x^" << st-i << " + ";
     }
-    cout <<"+"<< tb[st];
-        
+    cout << tb[i] << endl;
+}
+
+float horner_it(float x, int stopien, float tbwsp[])
+{
+    float wynik = tbwsp[0];
+
+    for(int i =0; i <= stopien; i++)
+        wynik = wynik * x + tbwsp[i];
+    
+    return wynik;
 }
 
 int main(int argc, char **argv)
@@ -27,7 +36,7 @@ int main(int argc, char **argv)
     cin >> stopien;
 
     tbwsp = new float [stopien+1];
-    cout << tbwsp;
+    //cout << tbwsp; - wyswietanie wskaznika
 
     for(int i=0; i <= stopien; i++) {
         cout << "podaj wsopółczynnik przy potędze " << stopien-i << ": ";
@@ -39,6 +48,7 @@ int main(int argc, char **argv)
 
     cout << "Wartość wielomianu o postaci: ";
     drukujw(stopien, tbwsp);
+    cout << "wynosi: " << horner_it(x, stopien, tbwsp);
     
     
 	return 0;
