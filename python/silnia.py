@@ -5,6 +5,7 @@
 # 
 #Oblicznie potęgi liczby naturalnej
 
+
 def silnia_it(n):
     """ 
     n! = 1 * 2 * ... * n
