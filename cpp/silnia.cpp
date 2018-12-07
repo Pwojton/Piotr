@@ -15,6 +15,20 @@ int silnia_it(int n) {
     return wynik;
 }
 
+// silnia_re(5) 
+// silnia_re(4) * 5
+// silnia_re(3) * 4
+// silnia_re(2) * 3
+// silnia_re(1) * 2
+// silnia_re(0) * 1
+// 1
+// 1*1
+// 1*2
+// 2*3
+// 6*4
+// 24*5
+// 120
+
 int silnia_rek(int n)
 {
     int wynik = 1;
