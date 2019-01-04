@@ -37,7 +37,7 @@ void zamien1(int &a, int &b)
 void zamien2(int tab[],int i)
 {
     int tmp = tab[i];
-    tab[i] = tab[i+1]
+    tab[i] = tab[i+1];
     tab[i+1] = tmp;
 }
 
@@ -47,14 +47,24 @@ void sort_bubble(int tab[], int n )
        for(int i=0;i < j;i++) {
             if (tab[i] > tab[i+1])
                 //zamien1(tab[i], tab[i+1]);
-                zamien2(tab, i)
+                zamien2(tab, i);
         }
     }
 }
 
- sort_insert()
+void sort_insert(int tabp[], int n)
 {
-
+    int i,j,k;
+    for (i = 1; i < n -1; i++) {
+        el = tab[i];
+        k = i;
+        for(j = k-1; j < n; j++) {
+            if (tab[j] < tab[k])
+                k=j;
+            }
+        zamien1(tab[i], tab[k])
+    }
+    
 }
 
 
