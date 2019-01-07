@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-<meta charset="utf-8" />
-<title>Aplikacja Quiz</title>
-<meta name="generator" content="Geany 1.32" />
-</head>
-
-<body>
- <h2>Witam w aplikacji Quiz!</h2>
- <p><a href="{{ url_for('lista')}}">Zobacz zapytania >>></a></p>
-</body>
-
-</html>
+{% extnds "szablon.html" %}
+{% block tytul %}QUIZ -Strona główna{% endblock %}
+{% block h1 %}Witaj!{% endblock %}
+{% block tresc %}Rozwiąż quizy{% endblock %}
