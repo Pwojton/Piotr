@@ -52,17 +52,17 @@ void sort_bubble(int tab[], int n )
     }
 }
 
-void sort_insert(int tabp[], int n)
+void sort_insert(int tab[], int n)
 {
-    int i,j,k;
+    int i,k, el;
     for (i = 1; i < n -1; i++) {
         el = tab[i];
-        k = i;
-        for(j = k-1; j < n; j++) {
-            if (tab[j] < tab[k])
-                k=j;
-            }
-        zamien1(tab[i], tab[k])
+        k = i -1;
+        while(k>=0 && tab[k]>el) {
+            tab[k+1]=tab[k];
+            k--;
+        }
+        tab[k+1] = el;
     }
     
 }
@@ -77,6 +77,9 @@ int main(int argc, char **argv)
     cout << endl;
     //tab[0] = 7; tab[1] = 5;zamien1(tab[0], tab[1]);cout << tab[0] << " " << tab[1];
     sort_bubble(tab, roz);
+    sort_insert(tab, roz
+    );
+    
     
     return 0;
 }
