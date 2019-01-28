@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="pl">
-<!--
-   index.html
--->
-
-<head>
-<meta charset="utf-8" />
-    <title>Aplikacja QUIZ - rozwiąż quiz</title>
-</head>
-
-<body>
-    <h1>Quiz – odpowiedz na pytania pytania</h1>
-
+{% extends "szablon.html" %}
+{% block tytul %}Quiz – Lista pytań{% endblock %}
+{% block h1 %}Quiz – odpowiedz na pytania{% endblock %}
+{% block tresc %}
 
     <form method="POST">
         <ol>
@@ -22,15 +12,14 @@
                     {% for o in p.odpowiedzi %}
                     <li>
                         <input type="radio" name="{{ p.id }}" value="{{ o.id }}">
-                        {{ o.odpowiedz }}</li> 
+                        {{ o.odpowiedz }}</li>
                     {% endfor %}
                 </ol>
             </li>
         {% endfor %}
         </ol>
-
-        <input type="submit" value="Prezślij">
+        
+        <input type="submit" value="Prześlij">
     </form>
-</body>
-
-</html>
+    
+{% endblock %}

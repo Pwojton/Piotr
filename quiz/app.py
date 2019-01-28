@@ -7,7 +7,7 @@ from modele import *
 from views import *
 
 app.config.update(dict(
-    SECRET_KEY='niesekretnyklucz',
+    SECRET_KEY='bardzosekretnyklucz',
     TITLE='Aplikacja Quiz',
 ))
 

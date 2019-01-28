@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="pl">
-<!--
-   index.html
--->
+{% extends "szablon.html" %}
+{% block tytul %}Quiz – Lista pytań{% endblock %}
+{% block h1 %}Quiz – odpowiedz na pytania{% endblock %}
+{% block tresc %}
 
-<head>
-<meta charset="utf-8" />
-    <title>Aplikacja QUIZ</title>
-</head>
 
-<body>
-    <h1>Quiz – pytania</h1>
-    
     <ol>
     {% for p in pytania %}
         <li>
@@ -19,7 +11,6 @@
         </li>
     {% endfor %}
     </ol>
-    
-</body>
 
-</html>
+{% endblock %}
+    
