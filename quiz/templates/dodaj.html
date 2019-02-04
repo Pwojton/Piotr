@@ -6,7 +6,18 @@
     <form method="POST">
         {{ form.csrf_token }}
         {{ form.pytanie.label }}<br>
-        {{ form.pytanie.pytanie(class="form-control") }}<br>
+        {{ form.pytanie(class="form-control") }}<br>
+        <br>
+        {{ form.kategoria.label }}<br>
+        {{ form.kategoria(class ="form-control") }}<br>
+        <br>
+        <label>Podaj odpowiedzi i zaznacz poprawną:</label>
+
+        <ol>
+        {% for odp in form.odpowiedzi %}
+            <li>{{ odp }}</li>
+        {% endfor %}
+        </ol>
         
         <input type="submit" class="btn btn-default" value="Prześlij">
     </form>
