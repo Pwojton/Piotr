@@ -15,7 +15,7 @@ def main(args):
     Vk2 = 70074
     Vnk2 = 117760
     Rc2 = int(Vk2) / int(Vnk2) * 100
-    R2c2 = (1 - int(Vk2) / int(Vnk2)) * 100  
+    Rc22 = (1 - int(Vk2) / int(Vnk2)) * 100  
     print('Współczynnik kompresji: ', Rc2)
     print('Ile miejsca zaoczczędzono: ', Rc22)
 
