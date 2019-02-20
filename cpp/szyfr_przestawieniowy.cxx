@@ -6,7 +6,10 @@ using namespace std;
 #define MAKS 100
 
 void szyfruj(char tekst[], int klucz){
-    klucz= 
+    klucz= klucz%26;
+    int i =0;
+    int kod = 0;
+    while (tekst[i])
 }
 
 void deszyfruj(char tekst[], int klucz){
