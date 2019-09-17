@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-12T13:21:07+02:00
+
+====== Home ======
+Created czwartek 12 września 2019
+
+Konfiguracja djangoapp
+python manage.py atratapp 
+
+pliki urls w django sa plikami konfiguracyjnymi

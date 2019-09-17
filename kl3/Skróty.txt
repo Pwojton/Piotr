@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-17T08:10:00+02:00
+
+====== Skróty ======
+Created wtorek 17 września 2019
+
+CTRL + SHIFT + strzalka w dół - zaznaczenie serii danych w kolumnie
+F4 - 

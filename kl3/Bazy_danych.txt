@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-17T07:22:55+02:00
+
+====== Bazy danych ======
+Created wtorek 17 września 2019
+
+==== Anomalie baz danych: ====
+* redundancja
+* anomalia modyfikacji  
+* anomalia usuwania
+* anomalia dodawania
+
+==== Normalizacja baz dancyh: ====
+* atomowość informacji
+* podział danych na tabele
+
+==== Funkcje tekstowe w arkuszu kalkulacyjnym: ====
+Dane/tekst jako kolumny
+DŁ - długość tekstu
+FRAGMENT.TEKSTU - Zwraca fragment podanego ciągu znaków
+LEWY, PRAWY - zwraca fragment wybranego kodu
+
+== Filtry: ==
+Dane/więcej filtrów/ filrt standardowy
+
+== Sortowanie: ==
+dane sortuj
+
+
+
