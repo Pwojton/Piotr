@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-19T13:10:36+02:00
+
+====== djangoapp ======
+Created czwartek 19 września 
+
+==== Typy danych ====
+
+== 1) typy liczbowe ==
+* Całkowite: INT, INTEGER
+* Zmiennoprzecinkowe: FLOAT, DOUBLE, DECIMAL
+
+== 2) typy tekstowe: ==
+* CHAR(10)
+* VARCHAR(30)
+* TEXT(250)
+
+== 3)data i czas: ==
+* DATE
+* DATETIME
+* TIMESTAMP
